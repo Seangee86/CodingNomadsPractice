@@ -37,7 +37,7 @@ x = txt.find("e")
 print(x)'''
 
 
-number = 23
+'''number = 23
 
 guess = int(input("Enter a number :"))
 
@@ -52,7 +52,40 @@ elif guess < number:
 else:
     print("that was way to high, try again")
 
-#print("Done")
+#print("Done")'''
+
+'''flag = "poop"
+if flag == "not poop":
+    print("WOooop worm wiggle")
+
+else:
+    print("ewww worms")'''
+
+#number = 5
+
+number = int(input("yo bro guess a number: "))
+
+if number == 10:
+    print("It's 5")
+
+elif number < 5:
+    print("so low bro!")
+
+elif number > 5 and number < 20:
+    print("Pretty decent")
+
+else:
+    print("whoa slow down, Way too high")
+
+
+
+
+
+
+
+
+
+
 
 
 
