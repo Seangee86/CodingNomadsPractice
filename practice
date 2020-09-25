@@ -1,8 +1,59 @@
 # user input is *always* gathered as a string
 # and needs to be converted if we want something else
 
-age = input("Please enter your age: ")
+'''age = input("Please enter your age: ")
 print(type(age)) # checking up on current type
 
 age = int(age)
-print(type(age)) # successfully converted the user input to an integer
+print(type(age)) # successfully converted the user input to an integer'''
+
+'''name = 'CodingNomads'
+print(len(name))'''
+
+'''name = 'sean'
+print(name.capitalize())'''
+
+#Using string slicing, and the string method, .capitalize(), change the following code so that it prints Nana
+
+
+'''fruit = "banana"
+print(fruit[2:6].capitalize())'''
+
+'''name = "Albert Smith"
+name[6:] = " Einstein"
+print(name)'''
+
+'''name = "Albert Smith"
+new_name = name[:6] + " Einstein"
+print(new_name)'''
+
+'''name = "python"[2:]
+print(name)'''
+
+'''txt = "Hello, welcome to my world."
+
+x = txt.find("e")
+
+print(x)'''
+
+
+number = 23
+
+guess = int(input("Enter a number :"))
+
+if guess == number:
+    print("Good job")
+    print("But you dont get anything")
+
+elif guess < number:
+    print("too low bro")
+    print("guess again")
+
+else:
+    print("that was way to high, try again")
+
+#print("Done")
+
+
+
+
