@@ -175,6 +175,14 @@ while True:
 print("bye!! (it's tiuq, btw.")'''
 
 
+'''name = ''
+
+while name != 'your name':
+    print('please print your name')
+    name = input()
+
+print('Thank you')'''
+
 
 
 
