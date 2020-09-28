@@ -63,7 +63,7 @@ else:
 
 #number = 5
 
-number = int(input("yo bro guess a number: "))
+'''number = int(input("yo bro guess a number: "))
 
 if number == 10:
     print("It's 5")
@@ -75,7 +75,119 @@ elif number > 5 and number < 20:
     print("Pretty decent")
 
 else:
-    print("whoa slow down, Way too high")
+    print("whoa slow down, Way too high")'''
+
+# Task
+# Given an integer, , perform the following conditional actions:
+
+# If  is odd, print Weird
+# If  is even and in the inclusive range of 2 to 5, print Not Weird
+# If  is even and in the inclusive range of 6 to 20, print Weird
+# If  is even and greater than 20, print Not Weird
+
+
+'''number = 23
+runnning = True
+
+while runnning:
+    guess = int(input("Enter an Integer: "))
+
+    if guess == number:
+        print("Congrats, you guessed it")
+        # this causes the while loop to stop
+        running = False
+    elif guess < number:
+        print("No, it's a little higher than that")
+    else:
+        print("no its a little lower than that")
+
+else:
+    print("The while loop is over")
+
+
+print("Done")'''
+
+'''location = "west"
+
+if location == "east":
+    print("Hello west side")
+
+else:
+    print("hello east side")'''
+
+'''for i in range(1, 20):
+    print(i)
+else:
+    print("poop")'''
+
+
+'''my_list = ["cheese", "milk", "cookies"]
+
+for item in my_list:
+    print(item)'''
+
+'''names = ["Sean", "Adrian", "John", "Jessie"]
+
+for name in names:
+    print(name)'''
+
+'''my_list = [1, 2, 3, 4, 5, 6]
+
+for num in my_list:
+    if num % 3 == 0:
+        break
+    print(num)
+print("Finished 'break' part")
+
+for num in my_list:
+    if num % 3 == 0:
+        continue
+    print(num)
+print("finished 'continue' part")'''
+
+
+
+
+'''numbers = range(1,11)
+
+for num in numbers:
+    print(num)'''
+
+#Using the list provided below, write a for loop to iterate over the list and find (and print) the sum of all the numbers in the list.
+'''example_list = [2, 5, 7, 9, 3, 8, 8]
+
+sum = 0
+
+for num in example_list:
+    sum += num
+print(sum)'''
+
+'''count = 5
+while count > 0:
+    print(count)
+    count -= 1
+
+while True:
+        prompt = input("say something: ")
+        if prompt == "quit":
+            break
+        print(prompt[::-1])
+print("bye!! (it's tiuq, btw.")'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
