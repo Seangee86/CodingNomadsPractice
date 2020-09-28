@@ -183,22 +183,73 @@ while name != 'your name':
 
 print('Thank you')'''
 
+people = [
+            ['Bilbo', 'Baggins'],
+            ['Gollum'],
+            ['Tom', 'Bombadil'],
+            ['Aragorn']
+        ]
+
+# Change everything below here to use while loops instead
+'''for person in people:
+    to_print = ""
+    for name in person:
+        to_print += name + " "
+    print(to_print)
+# Change everything below here to use while loops instead
+i = 0
+while i < len(people):
+    person = people[i]
+    to_print = ""
+    j = 0
+    while j < len(person):
+        name = person[j]
+        to_print += name + " "
+        j += 1
+    print(to_print)
+    i += 1'''
+
+person = {
+    'first_name' : 'Sean',
+    'last_name' : 'Granier',
+    'age' : 34
+}
+
+'''print(person['first_name'])
+
+print(person['last_name'])
+
+print(person['age'])
+
+person['cell_number'] = '555-5555'
 
 
 
+print(person.keys())
+
+print(person.values())'''
+
+
+# Create a script that a user questions in the command line. The script should follow the outlined specs.
+# miles to drive
+# gallons-per-mile usage of the car
+# price per gallon of fuel
+# Caluclate the cost of the trip and display it to the user in the command line.
 
 
 
+# travel distance 100 miles
+miles = int(input('How many miles did you drive?: '))
+# fuel consumption 30 miles per gallon
+fuel = int(input('How many miles to the gallon does your vehicle get?: '))
+# Price per gallon $1.20 per gallon
+price = float(input('How much was the cost of fuel per gallon?: '))
 
+fuel_needed = miles / fuel
 
+fuel_cost = fuel_needed * price
 
-
-
-
-
-
-
-
+print(f'your trip costed you ${fuel_cost}')
 
 
 
