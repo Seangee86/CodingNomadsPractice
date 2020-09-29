@@ -253,15 +253,28 @@ print(f'your trip costed you ${fuel_cost}')'''
 
 
 # Define my_stuff
-my_stuff = ['apple', 'keys', 'book', 45.5]
+'''my_stuff = ['apple', 'keys', 'book', 45.5]
 # Define nums
 nums = list(range(1, 100))
 
 
-print(my_stuff, nums)
+print(my_stuff, nums)'''
 
 
 
+
+
+# Character Input
+# Create a program that asks the user to enter their name and their age.
+# Print out a message addressed to them that tells them the year that they will turn 100 years old.
+
+name = input("What is your name?: ")
+age = int(input("How old are you?: "))
+future = 100 - age
+
+from datetime import date
+current_date = date.today()
+print(f'Hey {name} when you turn 100 years old it will be the year {current_date.year + future}')
 
 
 
