@@ -405,7 +405,8 @@ print("The total price is", total_price)'''
 
 
 
-
+state = set("Mississippi")
+print(state)
 
 
 
