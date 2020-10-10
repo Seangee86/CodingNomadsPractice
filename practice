@@ -13,7 +13,7 @@ print(len(name))'''
 '''name = 'sean'
 print(name.capitalize())'''
 
-#Using string slicing, and the string method, .capitalize(), change the following code so that it prints Nana
+# Using string slicing, and the string method, .capitalize(), change the following code so that it prints Nana
 
 
 '''fruit = "banana"
@@ -35,7 +35,6 @@ print(name)'''
 x = txt.find("e")
 
 print(x)'''
-
 
 '''number = 23
 
@@ -61,7 +60,7 @@ if flag == "not poop":
 else:
     print("ewww worms")'''
 
-#number = 5
+# number = 5
 
 '''number = int(input("yo bro guess a number: "))
 
@@ -120,7 +119,6 @@ else:
 else:
     print("poop")'''
 
-
 '''my_list = ["cheese", "milk", "cookies"]
 
 for item in my_list:
@@ -145,15 +143,12 @@ for num in my_list:
     print(num)
 print("finished 'continue' part")'''
 
-
-
-
 '''numbers = range(1,11)
 
 for num in numbers:
     print(num)'''
 
-#Using the list provided below, write a for loop to iterate over the list and find (and print) the sum of all the numbers in the list.
+# Using the list provided below, write a for loop to iterate over the list and find (and print) the sum of all the numbers in the list.
 '''example_list = [2, 5, 7, 9, 3, 8, 8]
 
 sum = 0
@@ -174,7 +169,6 @@ while True:
         print(prompt[::-1])
 print("bye!! (it's tiuq, btw.")'''
 
-
 '''name = ''
 
 while name != 'your name':
@@ -184,11 +178,11 @@ while name != 'your name':
 print('Thank you')'''
 
 people = [
-            ['Bilbo', 'Baggins'],
-            ['Gollum'],
-            ['Tom', 'Bombadil'],
-            ['Aragorn']
-        ]
+    ['Bilbo', 'Baggins'],
+    ['Gollum'],
+    ['Tom', 'Bombadil'],
+    ['Aragorn']
+]
 
 # Change everything below here to use while loops instead
 '''for person in people:
@@ -210,9 +204,9 @@ while i < len(people):
     i += 1'''
 
 person = {
-    'first_name' : 'Sean',
-    'last_name' : 'Granier',
-    'age' : 34
+    'first_name': 'Sean',
+    'last_name': 'Granier',
+    'age': 34
 }
 
 '''print(person['first_name'])
@@ -229,13 +223,11 @@ print(person.keys())
 
 print(person.values())'''
 
-
 # Create a script that a user questions in the command line. The script should follow the outlined specs.
 # miles to drive
 # gallons-per-mile usage of the car
 # price per gallon of fuel
 # Caluclate the cost of the trip and display it to the user in the command line.
-
 
 
 # travel distance 100 miles
@@ -251,7 +243,6 @@ fuel_cost = fuel_needed * price
 
 print(f'your trip costed you ${fuel_cost}')'''
 
-
 # Define my_stuff
 '''my_stuff = ['apple', 'keys', 'book', 45.5]
 # Define nums
@@ -259,10 +250,6 @@ nums = list(range(1, 100))
 
 
 print(my_stuff, nums)'''
-
-
-
-
 
 # Character Input
 # Create a program that asks the user to enter their name and their age.
@@ -275,7 +262,6 @@ future = 100 - age
 from datetime import date
 current_date = date.today()
 print(f'Hey {name} when you turn 100 years old it will be the year {current_date.year + future}')'''
-
 
 # Odd Or Even
 # Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user.
@@ -329,7 +315,6 @@ for number in list_range:
 
 print(divisor_list)'''
 
-
 '''for number in range(7, 1, -1):
     print(number)
 
@@ -372,16 +357,14 @@ while num < 11:
     print(num)
     num += 1'''
 
-
 '''for num in range(1, 21):
-    print("#" * num)'''       # triangle for loop
+    print("#" * num)'''  # triangle for loop
 
 '''times = 1
 
 while times < 220:
     print("#" * times)
     times += 1'''
-
 
 '''msg = input("Say something: ")
 
@@ -402,12 +385,119 @@ total_price += nice_sweater
 total_price += fun_books
 print("The total price is", total_price)'''
 
+# state = set("Mississippi")
+# print(state)
 
 
+import turtle
 
-state = set("Mississippi")
-print(state)
+# my_turtle = turtle.Turtle()
+# my_turtle.forward(100)
+# my_turtle.left(90)
+# my_turtle.forward(100)
+# my_turtle.left(90)
+# my_turtle.forward(100)
+# my_turtle.left(90)
+# my_turtle.forward(100)
+# my_turtle.left(90)
 
 
+# star = turtle.Turtle()
+#
+# for i in range(50):
+#     star.forward(50)
+#     star.right(144)
+# turtle.done()
+
+# ninja = turtle.Turtle()
+#
+# ninja.speed(10)
+#
+# for i in range(180):
+#     ninja.forward(100)
+#     ninja.right(30)
+#     ninja.forward(20)
+#     ninja.left(60)
+#     ninja.forward(50)
+#     ninja.right(30)
+#
+#     ninja.penup()
+#     ninja.setposition(0, 0)
+#     ninja.pendown()
+#
+#     ninja.right(2)
+#
+# turtle.done()
 
 
+# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#
+# for num in my_list:
+#     if num % 2 == 0:
+#         print(num, "Even")
+#     else:
+#         print(num, "Odd")
+
+# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#
+# list_sum = 0
+#
+# for num in my_list:
+#     list_sum = list_sum + num
+# print(list_sum)
+
+# my_string = "mustard is yellow"
+#
+# for letter in my_string:
+#     print(letter)
+
+# tup = (1, 2, 3,)
+#
+# for item in tup:
+#     print(item)
+
+# my_list = [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10)]  # tuples inside a list
+
+# for item in my_list:
+#     print(item)
+
+# for a, b in my_list:
+#     print(a)
+
+# Iterate through a dictionary
+
+# d = {"k1": 1, "k2": 2, "k3": 3}
+# for item in d:
+#     print(item)
+
+# d = {"k1": 1, "k2": 2, "k3": 3}
+# for item in d.items():
+#     print(item)
+
+# d = {"k1": 1, "k2": 2, "k3": 3}
+# for key, value in d:
+#     print(value)
+
+# d = {"k1": "yes", "k2": "no", "k3": "maybe"}
+#
+# for key, values in d.items():
+#     print(d)
+
+# x = 0
+#
+# while x < 5:
+#     print(f"The current value of x is {x}")
+#     x += 1
+#
+# else:
+#     print("x is not less than 5")
+
+# x = [1, 2, 3]
+#
+# for item in x:
+#     pass
+#
+# print("end of script")
+
+# for num in range(2, 11, 2):
+#     print(num)
