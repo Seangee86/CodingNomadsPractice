@@ -576,17 +576,77 @@ import turtle
 ## EXERCISE 8 ##
 
 # the variable formatter set to a string of 4 curly braces
-formatter = "{} {} {} {}"
+# formatter = "{} {} {} {}"
+# # all 5 prints a being formatted to the variable .format which  then inserts the argument to the set amount of curly braces
+# print(formatter.format(1, 2, 3, 4))
+# print(formatter.format("one", "two", "three", "four"))
+# print(formatter.format(True, False, False, True))
+# print(formatter.format(formatter, formatter, formatter, formatter))
+# print(formatter.format(
+#     "This is my",
+#     "attempt to learn how to code",
+#     "so I can then",
+#     "leverage my skill to reach F.I.R.E"
+# ))
+
+## EXERCISE 9 ##
+# days = "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+# # the variable "days" set to the days of the week
+# week_days = "Mon Tue Wed Thu Fri Sat Sun"
+# # the variable "months" set to the months of the year with newline "\n" set to create each month on a new line
+# months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+#
+# print("Here is the days: ", days)
+# # a print function with a string and calling the variable "days"
+# print("Here are the week days: ", week_days)
+# # a print function with a string and calling the variable "months"
+# print("Here are the months: ", months)
+# # a print function with 3 double-quotes to write really long text in a string
+# print("""
+# There's something going on here.
+# With three double-quotes.
+# We'll be able to type as much as we like.
+# Even 4 lines if we want, or 5, or 6.
+# """)
 
 
-print(formatter.format(1, 2, 3, 4))
-print(formatter.format("one", "two", "three", "four"))
-print(formatter.format(True, False, False, True))
-print(formatter.format(formatter, formatter, formatter, formatter))
-print(formatter.format(
-    "This is my",
-    "attempt to learn how to code",
-    "so I can then",
-    "leverage my skill",
-    "to make good money"
-))
+## EXERCISE  10 ##
+#
+# # variable set to "tabby_cat. The special character Tab \t
+# tabby_cat = "\t I'm tabbed in."
+# # variable set, splits the string in 2 lines new line \n
+# persian_cat = "I'm split\non a line."
+# # adding the \\ which gives you the backslash \
+# backslash_cat = "I'm \\ a \\ cat"
+# # adding my own code
+# item = "cat yarn"
+#
+# # 3 double quotes, tabs with * to create a visual list
+# # splits catnip from grass onto a new line
+# fat_cat = f'''
+# I'll do a list:
+# \t* {item}
+# \t* cat food
+# \t* fishies
+# \t* catnip\n\t* Grass
+# '''
+# # prints each variable
+# print(tabby_cat)
+# print(persian_cat)
+# print(backslash_cat)
+# print(fat_cat)
+
+
+## EXERCISE 11 ##
+
+# # prints out a question
+# print("How old are you?", end=' ')
+# # age is assigned to input() which is collected by the user. ex: user input 34 now age = 34
+# age = input()
+# # prints a string question and saves user data to the variable "height"
+# print("How tall are you?", end=' ')
+# height = input()
+# print("How much do you weigh?", end=' ')
+# weight = input()
+# # print f string with varibles age, height, and weight which was gathered for the user input
+# print(f"So, you're {age} years old, {height} tall and {weight} pounds")
