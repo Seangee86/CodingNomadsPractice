@@ -501,3 +501,92 @@ import turtle
 
 # for num in range(2, 11, 2):
 #     print(num)
+
+
+####### LEARN PYTHON THE HARD WAY ########
+
+#
+# # a variable set to the number 10
+# types_of_people = 10
+#
+# # another variable called x set to an "f" string. Which also holds the first variable inside of it.
+# x = f"There are {types_of_people} types of people."
+# # variable set to the string "binary"
+# binary = "binary"
+# # a variable set to the string "don't"
+# do_not = "don't"
+# # a variable set to an "f" string with 2 variables set
+# y = f"Those who know {binary} and those who {do_not}."
+# # print the variable x
+# print(x)
+# # print the variable y
+# print(y)
+#
+# # print the f string with the variable x within it
+# print(f"I said: {x}")
+# # print another f string with the variable y within it
+# print(f"I also said '{y}'")
+#
+# # variable hilarious set to the boolean False
+# hilarious = False
+# # a variable set to a string asking a question with a format function
+# joke_evaluation = "Isn't that joke so funny?! {}"
+# # prints the variable and the format function with the argument hilarious
+# print(joke_evaluation.format(hilarious))
+#
+# # variable w set to a string
+# w = "This is the left side of..."
+# # variable e set to a string
+# e = "a string with a right side."
+#
+# # using the + operator concatenates the 2 varibales into one longer one
+# print(w + e)
+
+
+## EXERCISE 7 ##
+#
+# # print a string
+# print("Mary had a little lamb.")
+#
+# # print a string with "snow" as the string
+# print("it's fleece was white as {}.".format("snow"))
+# # print a string
+# print("And everywhere that mary went")
+# # print a string dot the using the multiplication operator times it by 10 to print .......... 10 dots
+# print("." * 12)
+# # this whole step is variables for each individual letter. Then concatenating each variable
+# end1 = "C"
+# end2 = "h"
+# end3 = "e"
+# end4 = "e"
+# end5 = "s"
+# end6 = "e"
+# end7 = "B"
+# end8 = "u"
+# end9 = "r"
+# end10 = "g"
+# end11 = "e"
+# end12 = "r"
+#
+# # watch end = ' ' at the end. try removing it to see what happens
+# # = ' ' connects the 2 prints on to the same line
+# print(end1 + end2 + end3 + end4 + end5 + end6, end=' ')
+# print(end7 + end8 + end9 + end10 + end11 + end12)
+
+## EXERCISE 8 ##
+
+# the variable formatter set to a string of 4 curly braces
+formatter = "{} {} {} {}"
+
+
+print(formatter.format(1, 2, 3, 4))
+print(formatter.format("one", "two", "three", "four"))
+print(formatter.format(True, False, False, True))
+print(formatter.format(formatter, formatter, formatter, formatter))
+print(formatter.format(
+    "This is my",
+    "attempt to learn how to code",
+    "so I can then",
+    "leverage my skill",
+    "to make good money"
+))
