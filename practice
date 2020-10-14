@@ -648,5 +648,16 @@ import turtle
 # height = input()
 # print("How much do you weigh?", end=' ')
 # weight = input()
-# # print f string with varibles age, height, and weight which was gathered for the user input
+# # print f string with variables age, height, and weight which was gathered for the user input
 # print(f"So, you're {age} years old, {height} tall and {weight} pounds")
+
+
+## EXERCISE 12 ##
+
+
+
+
+
+
+
+
