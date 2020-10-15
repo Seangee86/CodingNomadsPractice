@@ -652,7 +652,27 @@ import turtle
 # print(f"So, you're {age} years old, {height} tall and {weight} pounds")
 
 
-## EXERCISE 12 ##
+# I build a twitter bot bitches !!!!
+
+# twitter_API.update_status("snesBot activated")
+
+# hashtag = "#snes"
+# tweet_number = 10
+#
+# tweets = tweepy.Cursor(twitter_API.search, hashtag).items(tweet_number)
+#
+#
+# def searchBot():
+#     for tweet in tweets:
+#         try:
+#             tweet.retweet()
+#             print("RT Done")
+#         except tweepy.TweepError as e:
+#             print(e.reason)
+#             time.sleep(15)
+#
+#
+# searchBot()
 
 
 
