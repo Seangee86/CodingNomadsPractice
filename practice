@@ -652,7 +652,7 @@ import turtle
 # print(f"So, you're {age} years old, {height} tall and {weight} pounds")
 
 
-# I build a twitter bot bitches !!!!
+## I BUILT A TWITTTER BOT BITCHES!!!!
 
 # twitter_API.update_status("snesBot activated")
 
@@ -675,9 +675,46 @@ import turtle
 # searchBot()
 
 
+## EXERCISE 12 ##
+# variable age set to a input to ask user a question
+# age = input("How old are you? ")
+# height = input("How tall are you? ")
+# weight = input("How much do you weigh? ")
+# # print function with an f string using the variables to place the users input into the string output
+# print(f"So, you're {age} years old {height} tall and you weigh {weight} pounds")
+
+## EXERCISE 13 ##
 
 
+# from sys import argv
+#
+# script, first, second, third, fourth = argv
+#
+# print("this script is called:", script)
+# print("Your first variable is:", first)
+# print("Your second variable is:", second)
+# print("your third variable is:", third)
+# print(f"use the {fourth} with this one")
 
+## EXERCISE 14 ##
+# from the system imports argv
+from sys import argv
+# the commandline variables to run
+script, user_name = argv
+prompt = '8====>'
+# prints an f-string with the cml variables
+print(f"Hi {user_name}, I'm the {script} script.")
+print("I'd like to as you a few questions.")
+print(f"Do you like me {user_name}?")
+likes = input(prompt)
 
+print(f"Where do you live {user_name}?")
+lives = input(prompt)
 
+print("What kind of computer do you have?")
+computer = input(prompt)
 
+print(f'''
+Alright, so you said {likes} about liking me.
+You live in {lives}. Not sure where that is.
+And you have a {computer}. Nice! ''')
