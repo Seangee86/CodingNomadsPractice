@@ -389,8 +389,6 @@ print("The total price is", total_price)'''
 # print(state)
 
 
-import turtle
-
 # my_turtle = turtle.Turtle()
 # my_turtle.forward(100)
 # my_turtle.left(90)
@@ -698,16 +696,15 @@ import turtle
 
 ## EXERCISE 14 ##
 # from the system imports argv
-from sys import argv
 # the commandline variables to run
-script, user_name = argv
-prompt = '8====>'
-# prints an f-string with the cml variables
-print(f"Hi {user_name}, I'm the {script} script.")
-print("I'd like to as you a few questions.")
-print(f"Do you like me {user_name}?")
-likes = input(prompt)
-
+# script, user_name = argv
+# prompt = '8====>'
+# # prints an f-string with the cml variables
+# print(f"Hi {user_name}, I'm the {script} script.")
+# print("I'd like to as you a few questions.")
+# print(f"Do you like me {user_name}?")
+# likes = input(prompt)
+#
 print(f"Where do you live {user_name}?")
 lives = input(prompt)
 
@@ -718,3 +715,4 @@ print(f'''
 Alright, so you said {likes} about liking me.
 You live in {lives}. Not sure where that is.
 And you have a {computer}. Nice! ''')
+
