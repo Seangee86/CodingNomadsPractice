@@ -1,4 +1,6 @@
 from sys import argv
+from os.path import exists
+
 # user input is *always* gathered as a string
 # and needs to be converted if we want something else
 
@@ -720,11 +722,11 @@ print("The total price is", total_price)'''
 ## EXERCISE 15 ##
 # calling from system to import argv
 # from sys import argv
-# # the variables to pass through the cml ( python3 practice ex15.txt )
+# the variables to pass through the cml ( python3 practice from_file.txt )
 # script, filename = argv
 # # a variable set to the open function with the filename as the parameter
 # txt = open(filename)
-# # prints an f-string "Here's your file" with the variable "ex15.txt"
+# # prints an f-string "Here's your file" with the variable "from_file.txt"
 # print(f"Here's your file {filename}: ")
 # # prints the txt file to the cml:
 # # "This is stuff I typed into a file.
@@ -743,42 +745,141 @@ print("The total price is", total_price)'''
 # print(txt_again.read())
 
 
-
 ## EXERCISE 16 ##
 
-# from sys import argv
+# # from sys import argv
+#
+# script, filename = argv
+#
+# print(f"We're going to erase {filename}.")
+# print("If you don't want that, hit CTRL-C (^C).")
+# print("If you do want that, hit RETURN.")
+#
+# input("?")
+#
+# print("Opening the file...")
+# target = open(filename, "w")
+#
+# print("Truncating the file. Goodbye!")
+# target.truncate()
+#
+# print("Now Im going to ask you for three lines.")
+#
+# line1 = input("line1: ")
+# line2 = input("line2: ")
+# line3 = input("line3: ")
+#
+# print("Im going to write these to the file.")
+#
+# target.write(line1)
+# target.write("\n")
+# target.write(line2)
+# target.write("\n")
+# target.write(line3)
+# target.write("\n")
+#
+#
+# print("And finally, we close it.")
+# target.close()
 
-script, filename = argv
 
-print(f"We're going to erase {filename}.")
-print("If you don't want that, hit CTRL-C (^C).")
-print("If you do want that, hit RETURN.")
+## EXERCISE 17 ##
 
-input("?")
+# script, from_file, to_file = argv
 
-print("Opening the file...")
-target = open(filename, "w")
+# in_file = open(from_file)
+# indata = in_file.read()
+#
+# # print(f"The input file is {len(indata)} bytes long.")
+#
+# # print(f"Does the output file exist? {exists(to_file)}")
+# print("Ready, hit RETURN to continue, CTRL-C to abort.")
+# input()
+#
+# out_file = open(to_file, 'w')
+# out_file.write(indata)
+#
+#
+# print("Alright, all done.")
 
-print("Truncating the file. Goodbye!")
-target.truncate()
+# out_file.close()
+# in_file.close()
 
-print("Now Im going to ask you for three lines.")
 
-line1 = input("line1: ")
-line2 = input("line2: ")
-line3 = input("line3: ")
+# script, from_file, to_file = argv
+#
+# in_file = open(from_file)
+# indata = in_file.read()
+#
+# # print(f"The input file is {len(indata)} bytes long.")
+#
+# print(f"Does the output file exist? {exists(to_file)}")
+# print("Ready, hit RETURN to continue, CTRL-C to abort.")
+# input()
+#
+# out_file = open(to_file, 'w')
+# out_file.write(indata)
+#
+#
+# print("Alright, all done.")
 
-print("Im going to write these to the file.")
+## EXERCISE 18 ##
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+# ok, this *args is actually pointless
+# def print_two(*args):
+#     arg1, arg2 = args
+#     print(f"arg1: {arg1}, arg2: {arg2}")
+#
+#
+# print_two("Sean", "Gee")
+#
+#
+# # we can just do this
+# def print_two_again(arg1, arg2):
+#     print(f"arg1: {arg1}, arg2: {arg2}")
+#
+#
+# print_two_again("Sean", 560)
+#
+#
+# # this one takes no arguments
+# def print_one(name):
+#     print(f"arg1: {name}")
+#
+#
+# print_one("Sean")
+#
+#
+# def print_none():
+#     print("I got nothin")
+#
+#
+# print_none()
 
-target = open(filename, "r")
-print(open(filename))
 
-print("And finally, we close it.")
-target.close()
+"""EXERCISE 19"""
+
+
+def cheese_and_crackers(cheese_count, boxes_of_crackers):
+    print(f"You have {cheese_count} cheeses!")
+    print(f"You have {boxes_of_crackers} boxes of crackers")
+    print("Man that's enough for a party")
+    print("Get a blanket.\n")
+
+
+print("We can just give the function numbers directly")
+cheese_and_crackers(20, 30)
+
+
+print("OR, we can use a variable from our script:")
+amount_of_cheese = 10
+amount_of_crackers = 50
+
+cheese_and_crackers(amount_of_cheese, amount_of_crackers)
+
+
+print("We can even do math inside too:")
+cheese_and_crackers(10 + 20, 5 + 6)
+
+print("And we can combine the two variables and math")
+cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
