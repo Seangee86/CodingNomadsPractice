@@ -885,16 +885,17 @@ print("The total price is", total_price)'''
 
 
 ## EXERCISE 20 ##
-
+# the command for the cml example: practice cool.txt
 script, input_file = argv
 
 
+# defining a function print_all to print everything from the file
 def print_all(f):
     print(f.read())
 
-
-def rewind(f):
-    f.seek(0)
+# define a function
+# def rewind(f):
+#     f.seek(0)
 
 
 def print_a_line(line_count, f):
@@ -909,7 +910,7 @@ print_all(current_file)
 
 print("Now let's rewind, kind of like a tape.")
 
-rewind(current_file)
+# rewind(current_file)
 
 print("Let's print three lines: ")
 
@@ -921,5 +922,3 @@ print_a_line(current_line, current_file)
 
 current_line = current_line + 1
 print_a_line(current_line, current_file)
-
-
